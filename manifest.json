@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Image Overlay Helper",
+  "version": "0.1",
+  "description": "A tool for front-end developers to aid in the building process. The idea is to superimpose an image over the active webapge as you're developing it to ensure that your final page render is as close as possible to the high-resolution web design composition created by the web designer.",
+  "icons": {
+    "128": "assets/projector_dark.png",
+    "48": "assets/projector_dark.png"
+  },
+  "author": "Christopher 'Cricket' Wallace",
+  "background": {
+    "persistent": false,
+    "scripts": ["bg.js"]
+  },
+  "permissions": [
+    "tabs",
+    "*://*.google.com/*",
+    "*://*.afar.com/*",
+    "*://l.afar.com:*/*"
+  ],
+  "page_action": {
+    "default_title": "IMAGE UNDERLAY",
+    "default_icon": {
+      "19": "assets/projector_dark.png",
+      "38": "assets/projector_dark.png"
+    }
+  },
+  "web_accessible_resources": [
+    "images/*.png",
+    "images/*.jpg",
+    "images/*.jpeg",
+    "images/*.gif"
+  ]
+}
